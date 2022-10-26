@@ -1,0 +1,20 @@
+POST http://localhost:8081/urls
+Content-Type: application/json
+
+{
+  "url":"www.google.com"
+}
+
+
+###
+POST http://localhost:8081/urls
+Content-Type: application/json
+
+{
+  "short":"abcd",
+  "url":"www.google.com"
+}
+
+###
+GET http://localhost:8081/urls/abcd
+Content-Type: application/json
